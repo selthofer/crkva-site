@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serbian Orthodox Church St King Stefan of Dechany</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Cyrillic support -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img id="logo" src="logo.png" alt="Church Logo" />
+            <div class="header-title">
+                <h1 data-en="Serbian Orthodox Church St King Stefan of Dechany" data-sr="Српска Православна Црква Свети Краљ Стефан Дечански">
+                    Serbian Orthodox Church St King Stefan of Dechany
+                </h1>
+                <h2 data-en="Carrum Downs, Victoria" data-sr="Карум Даунс, Викторија">
+                    Carrum Downs, Victoria
+                </h2>
+            </div>
+            <div id="lang-switch">
+                <button onclick="setLanguage('en')">English</button>
+                <button onclick="setLanguage('sr')">Српски</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#calendar" data-en="SPC Calendar" data-sr="СПЦ Календар">SPC Calendar</a></li>
+                <li><a href="#location" data-en="Location & Directions" data-sr="Локација и Упутства">Location & Directions</a></li>
+                <li><a href="#hours" data-en="Open Hours" data-sr="Радно Време">Open Hours</a></li>
+                <li><a href="#liturgies" data-en="Monthly Liturgies" data-sr="Месечни Распоред Литургија">Monthly Liturgies</a></li>
+                <li><a href="#history" data-en="History" data-sr="Историја">History</a></li>
+                <li><a href="#blog" data-en="Blog" data-sr="Блог">Blog</a></li>
+            </ul>
+        </nav>
+        <div id="chiron">
+            <marquee id="events-banner">
+                <span data-en="Welcome! Easter Service: 5th May, 10am | Parish Slava: 9th June" data-sr="Добродошли! Васкршња Литургија: 5. мај, 10ч | Слава Парохије: 9. јун">
+                    Welcome! Easter Service: 5th May, 10am | Parish Slava: 9th June
+                </span>
+            </marquee>
+        </div>
+    </header>
+    <main>
+        <section id="calendar">
+            <h2 data-en="SPC Calendar" data-sr="СПЦ Календар">SPC Calendar</h2>
+            <p data-en="View the Serbian Orthodox Church calendar for upcoming feasts and events." data-sr="Погледајте календар СПЦ за предстојеће празнике и догађаје.">
+                View the Serbian Orthodox Church calendar for upcoming feasts and events.
+            </p>
+            <a href="https://soc.org.au/calendar/" target="_blank" data-en="Official SPC Calendar" data-sr="Званични календар СПЦ">Official SPC Calendar</a>
+        </section>
+        <section id="location">
+            <h2 data-en="Location & Directions" data-sr="Локација и Упутства">Location & Directions</h2>
+            <p data-en="672-682 Frankston - Dandenong Rd, Carrum Downs VIC 3201" data-sr="672-682 Frankston - Dandenong Rd, Карум Даунс VIC 3201">
+                672-682 Frankston - Dandenong Rd, Carrum Downs VIC 3201
+            </p>
+            <iframe src="https://www.google.com/maps?q=672-682+Frankston+-+Dandenong+Rd,+Carrum+Downs+VIC+3201&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p>
+                <a href="https://www.facebook.com/decanac/" target="_blank" data-en="Our Facebook Page" data-sr="Наша Фејсбук страна">Our Facebook Page</a> |
+                <a href="https://soc.org.au/parish/st-steven-of-dechani-serbian-orthodox-parish/" target="_blank" data-en="Official Parish Info" data-sr="Званичне информације о парохији">Official Parish Info</a>
+            </p>
+        </section>
+        <section id="hours">
+            <h2 data-en="Open Hours" data-sr="Радно Време">Open Hours</h2>
+            <ul></ul>
+        </section>
+        <section id="liturgies">
+            <h2 data-en="Monthly Liturgies" data-sr="Месечни Распоред Литургија">Monthly Liturgies</h2>
+            <p data-en="See the monthly plan for holy liturgies below or contact us for details." data-sr="Погледајте месечни распоред светих литургија или нас контактирајте за детаље.">
+                See the monthly plan for holy liturgies below or contact us for details.
+            </p>
+            <ul>
+                <li data-en="First Sunday: Divine Liturgy at 10am" data-sr="Прва недеља: Света Литургија у 10ч">First Sunday: Divine Liturgy at 10am</li>
+                <li data-en="Second Sunday: Divine Liturgy at 10am" data-sr="Друга недеља: Света Литургија у 10ч">Second Sunday: Divine Liturgy at 10am</li>
+                <li data-en="Third Sunday: Divine Liturgy at 10am" data-sr="Трећа недеља: Света Литургија у 10ч">Third Sunday: Divine Liturgy at 10am</li>
+                <li data-en="Fourth Sunday: Divine Liturgy at 10am" data-sr="Четврта недеља: Света Литургија у 10ч">Fourth Sunday: Divine Liturgy at 10am</li>
+            </ul>
+        </section>
+        <section id="history">
+            <h2 data-en="History" data-sr="Историја">History</h2>
+            <p data-en="Our parish was founded to serve the Serbian Orthodox faithful in the Carrum Downs area. For more information, visit the official Metropolitanate website." data-sr="Наша парохија је основана ради служења српским православним верницима у области Карум Даунс. За више информација посетите званични сајт Митрополије.">
+                Our parish was founded to serve the Serbian Orthodox faithful in the Carrum Downs area. For more information, visit the official Metropolitanate website.
+            </p>
+            <a href="https://soc.org.au/parish/st-steven-of-dechani-serbian-orthodox-parish/" target="_blank" data-en="Parish History" data-sr="Историја парохије">Parish History</a>
+        </section>
+        <section id="blog">
+            <h2 data-en="Blog" data-sr="Блог">Blog</h2>
+            <article>
+                <h3 data-en="Welcome to our new website!" data-sr="Добродошли на наш нови сајт!">Welcome to our new website!</h3>
+                <p data-en="Stay tuned for news and updates." data-sr="Пратите вести и обавештења.">Stay tuned for news and updates.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2025 Serbian Orthodox Church St King Stefan of Dechany | Српска Православна Црква Свети Краљ Стефан Дечански</p>
+            <a href="admin.html" id="admin-link" data-en="Admin Panel" data-sr="Админ Панел">Admin Panel</a>
+        </div>
+    </footer>
+    <script src="lang.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel | Serbian Orthodox Church St King Stefan of Dechany</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main { max-width: 600px; }
+        label { display: block; margin-top: 1em; }
+        input, textarea, select { width: 100%; padding: 0.5em; margin-top: 0.3em; }
+        button { margin-top: 1em; }
+        .preview-img { max-width: 120px; margin-top: 0.5em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="index.html" style="color:#ffd700;">← Back to Site</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Manage Content</h2>
+        <p>
+            To update working hours and monthly liturgies, simply edit your Google Sheet.<br>
+            Changes will appear on the website automatically.<br>
+            <strong>
+                <a href="https://docs.google.com/spreadsheets/d/1BeAQ78zy08nVINIyDNBkTleStwmtr1a8xCNjUC5z_Gs/edit" target="_blank">
+                    Open Google Sheet to Edit Content
+                </a>
+            </strong>
+        </p>
+        <label>
+            Add Blog Post (local preview only):
+            <input type="text" id="blog-title" placeholder="Title">
+            <textarea id="blog-content" placeholder="Content"></textarea>
+            <button type="button" onclick="addBlogPost()">Add Post</button>
+        </label>
+        <div id="blog-preview"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Serbian Orthodox Church St King Stefan of Dechany</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
